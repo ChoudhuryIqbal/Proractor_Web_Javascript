@@ -1,0 +1,25 @@
+{
+  "name": "javascript_protractor_framework",
+  "version": "1.0.0",
+  "description": "Protractor Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.13.8",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "^7.0.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "scripts": {
+    "no": "/usr/local/bin/npm install",
+    "test": "node node_modules/protractor/bin/webdriver-manager update  && node node_modules/protractor/bin/protractor  configuration/conf.js --suite smoke"
+  },
+  "author": "iqbal",
+  "license": "ISC",
+  "devDependencies": {
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  }
+}
